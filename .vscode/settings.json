@@ -1,0 +1,16 @@
+{
+    // Deviation: JDK 21 is not installed on this machine, so the build runs on
+    // Temurin JDK 23 with maven.compiler.release=21. Add a JavaSE-21 entry here
+    // and make it the default once Temurin 21 is installed.
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-23",
+            "path": "C:\Program Files\Eclipse Adoptium\jdk-23.0.2.7-hotspot",
+            "default": true
+        }
+    ],
+    "java.test.config": {
+        "vmArgs": ["-Djava.awt.headless=true"]
+    },
+    "java.configuration.updateBuildConfiguration": "automatic"
+}

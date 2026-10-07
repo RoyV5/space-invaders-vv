@@ -1,0 +1,144 @@
+﻿metodo,tecnica,id,entradas_explicitas,entrada_implicita_estado,resultado_esperado
+"Alien(int x, int y)",Clases de equivalencia + análisis de valores límite (robusto),AL-01,"x=100, y=100",Objeto recién construido,"getX()=100, getY()=100 (valor nominal)"
+"Alien(int x, int y)",Clases de equivalencia + análisis de valores límite (robusto),AL-02,"x=-1, y=100",Objeto recién construido,"getX()=0, getY()=100"
+"Alien(int x, int y)",Clases de equivalencia + análisis de valores límite (robusto),AL-03,"x=0, y=100",Objeto recién construido,"getX()=0, getY()=100"
+"Alien(int x, int y)",Clases de equivalencia + análisis de valores límite (robusto),AL-04,"x=1, y=100",Objeto recién construido,"getX()=1, getY()=100"
+"Alien(int x, int y)",Clases de equivalencia + análisis de valores límite (robusto),AL-05,"x=357, y=100",Objeto recién construido,"getX()=357, getY()=100"
+"Alien(int x, int y)",Clases de equivalencia + análisis de valores límite (robusto),AL-06,"x=358, y=100",Objeto recién construido,"getX()=358, getY()=100 (máximo = BOARD_WIDTH)"
+"Alien(int x, int y)",Clases de equivalencia + análisis de valores límite (robusto),AL-07,"x=359, y=100",Objeto recién construido,"getX()=358, getY()=100"
+"Alien(int x, int y)",Clases de equivalencia + análisis de valores límite (robusto),AL-08,"x=100, y=-1",Objeto recién construido,"getX()=100, getY()=0"
+"Alien(int x, int y)",Clases de equivalencia + análisis de valores límite (robusto),AL-09,"x=100, y=0",Objeto recién construido,"getX()=100, getY()=0"
+"Alien(int x, int y)",Clases de equivalencia + análisis de valores límite (robusto),AL-10,"x=100, y=1",Objeto recién construido,"getX()=100, getY()=1"
+"Alien(int x, int y)",Clases de equivalencia + análisis de valores límite (robusto),AL-11,"x=100, y=349",Objeto recién construido,"getX()=100, getY()=349"
+"Alien(int x, int y)",Clases de equivalencia + análisis de valores límite (robusto),AL-12,"x=100, y=350",Objeto recién construido,"getX()=100, getY()=350 (máximo = BOARD_HEIGHT, ver supuesto S1)"
+"Alien(int x, int y)",Clases de equivalencia + análisis de valores límite (robusto),AL-13,"x=100, y=351",Objeto recién construido,"getX()=100, getY()=350"
+"Alien(int x, int y)",Clases de equivalencia + análisis de valores límite (robusto),AL-14,"x=-1, y=-1",Objeto recién construido,"getX()=0, getY()=0"
+"Alien(int x, int y)",Clases de equivalencia + análisis de valores límite (robusto),AL-15,"x=359, y=351",Objeto recién construido,"getX()=358, getY()=350"
+"Alien(int x, int y)",Clases de equivalencia + análisis de valores límite (robusto),AL-16,"x=-50, y=500",Objeto recién construido,"getX()=0, getY()=350"
+"Alien(int x, int y)",Clases de equivalencia + análisis de valores límite (robusto),AL-17,"x=500, y=-50",Objeto recién construido,"getX()=358, getY()=0"
+"Alien(int x, int y)",Clases de equivalencia + análisis de valores límite (robusto),AL-18,"x=Integer.MIN_VALUE, y=Integer.MIN_VALUE",Objeto recién construido,"getX()=0, getY()=0"
+"Alien(int x, int y)",Clases de equivalencia + análisis de valores límite (robusto),AL-19,"x=Integer.MAX_VALUE, y=Integer.MAX_VALUE",Objeto recién construido,"getX()=358, getY()=350"
+"Alien.Bomb(int x, int y)",Clases de equivalencia + valores límite (reducido),BM-01,"x=100, y=100",Objeto recién construido,"getX()=100, getY()=100 (valor nominal)"
+"Alien.Bomb(int x, int y)",Clases de equivalencia + valores límite (reducido),BM-02,"x=-1, y=100",Objeto recién construido,"getX()=0, getY()=100"
+"Alien.Bomb(int x, int y)",Clases de equivalencia + valores límite (reducido),BM-03,"x=0, y=100",Objeto recién construido,"getX()=0, getY()=100"
+"Alien.Bomb(int x, int y)",Clases de equivalencia + valores límite (reducido),BM-04,"x=358, y=100",Objeto recién construido,"getX()=358, getY()=100"
+"Alien.Bomb(int x, int y)",Clases de equivalencia + valores límite (reducido),BM-05,"x=359, y=100",Objeto recién construido,"getX()=358, getY()=100"
+"Alien.Bomb(int x, int y)",Clases de equivalencia + valores límite (reducido),BM-06,"x=100, y=-1",Objeto recién construido,"getX()=100, getY()=0"
+"Alien.Bomb(int x, int y)",Clases de equivalencia + valores límite (reducido),BM-07,"x=100, y=0",Objeto recién construido,"getX()=100, getY()=0"
+"Alien.Bomb(int x, int y)",Clases de equivalencia + valores límite (reducido),BM-08,"x=100, y=350",Objeto recién construido,"getX()=100, getY()=350 (ver supuesto S1)"
+"Alien.Bomb(int x, int y)",Clases de equivalencia + valores límite (reducido),BM-09,"x=100, y=351",Objeto recién construido,"getX()=100, getY()=350"
+"Alien.Bomb(int x, int y)",Clases de equivalencia + valores límite (reducido),BM-10,"x=-1, y=-1",Objeto recién construido,"getX()=0, getY()=0"
+"Alien.Bomb(int x, int y)",Clases de equivalencia + valores límite (reducido),BM-11,"x=359, y=351",Objeto recién construido,"getX()=358, getY()=350"
+"Alien.Bomb(int x, int y)",Clases de equivalencia + valores límite (reducido),BM-12,"x=Integer.MIN_VALUE, y=Integer.MIN_VALUE",Objeto recién construido,"getX()=0, getY()=0"
+"Alien.Bomb(int x, int y)",Clases de equivalencia + valores límite (reducido),BM-13,"x=Integer.MAX_VALUE, y=Integer.MAX_VALUE",Objeto recién construido,"getX()=358, getY()=350"
+Alien.act(int direction),Clases de equivalencia sobre direction + valores límite de la posición implícita,AA-01,direction=1,"Alien en (100, 50)","getX()=101, getY()=50"
+Alien.act(int direction),Clases de equivalencia sobre direction + valores límite de la posición implícita,AA-02,direction=-1,"Alien en (100, 50)","getX()=99, getY()=50"
+Alien.act(int direction),Clases de equivalencia sobre direction + valores límite de la posición implícita,AA-03,direction=0,"Alien en (100, 50)","getX()=100, getY()=50 (sin desplazamiento)"
+Alien.act(int direction),Clases de equivalencia sobre direction + valores límite de la posición implícita,AA-04,direction=5,"Alien en (100, 50)","getX()=105, getY()=50 (magnitud respetada)"
+Alien.act(int direction),Clases de equivalencia sobre direction + valores límite de la posición implícita,AA-05,direction=-5,"Alien en (100, 50)","getX()=95, getY()=50"
+Alien.act(int direction),Clases de equivalencia sobre direction + valores límite de la posición implícita,AA-06,direction=100,"Alien en (100, 50)","getX()=200, getY()=50"
+Alien.act(int direction),Clases de equivalencia sobre direction + valores límite de la posición implícita,AA-07,direction=1,"Alien en (0, 0) (esquina sup. izquierda)","getX()=1, getY()=0"
+Alien.act(int direction),Clases de equivalencia sobre direction + valores límite de la posición implícita,AA-08,direction=-1,"Alien en (200, 350) (y máxima)","getX()=199, getY()=350"
+Alien.act(int direction),Clases de equivalencia sobre direction + valores límite de la posición implícita,AA-09,"direction=1, llamado dos veces seguidas","Alien en (100, 50)","getX()=102, getY()=50 (desplazamiento acumulativo)"
+Player(),Verificación del valor esperado (caso único),PL-01,(ninguna),new Player(),"getX()=179 (centro: BOARD_WIDTH/2), getY()=280 (GROUND-10) (ver S2)"
+Player(),Verificación del valor esperado (caso único),PL-02,act() justo tras construir,Player recién construido,getX()=179 (desplazamiento inicial 0)
+Player.act(),"Particiones del estado (dx ∈ {-2, 0, 2}) × región de posición + valores límite en los bordes",PA-01,act(),"x=179, sin tecla pulsada (dx=0)",getX()=179
+Player.act(),"Particiones del estado (dx ∈ {-2, 0, 2}) × región de posición + valores límite en los bordes",PA-02,act(),"x=179, tecla IZQUIERDA pulsada (dx=-2)",getX()=177
+Player.act(),"Particiones del estado (dx ∈ {-2, 0, 2}) × región de posición + valores límite en los bordes",PA-03,act(),"x=179, tecla DERECHA pulsada (dx=+2)",getX()=181
+Player.act(),"Particiones del estado (dx ∈ {-2, 0, 2}) × región de posición + valores límite en los bordes",PA-04,act() ×3,"x=100, DERECHA pulsada",getX()=106
+Player.act(),"Particiones del estado (dx ∈ {-2, 0, 2}) × región de posición + valores límite en los bordes",PA-05,act() ×3,"x=100, IZQUIERDA pulsada",getX()=94
+Player.act(),"Particiones del estado (dx ∈ {-2, 0, 2}) × región de posición + valores límite en los bordes",PA-06,act(),"x=2, IZQUIERDA pulsada",getX() ≥ 0 (dentro del área)
+Player.act(),"Particiones del estado (dx ∈ {-2, 0, 2}) × región de posición + valores límite en los bordes",PA-07,act(),"x=1, IZQUIERDA pulsada",getX() ≥ 0
+Player.act(),"Particiones del estado (dx ∈ {-2, 0, 2}) × región de posición + valores límite en los bordes",PA-08,act(),"x=0, IZQUIERDA pulsada",getX() ≥ 0 (no sale por la izquierda)
+Player.act(),"Particiones del estado (dx ∈ {-2, 0, 2}) × región de posición + valores límite en los bordes",PA-09,act(),"x=341 (BOARD_WIDTH-PLAYER_WIDTH-2), DERECHA pulsada",getX() ≤ 343 (ver S3)
+Player.act(),"Particiones del estado (dx ∈ {-2, 0, 2}) × región de posición + valores límite en los bordes",PA-10,act(),"x=342, DERECHA pulsada",getX() ≤ 343
+Player.act(),"Particiones del estado (dx ∈ {-2, 0, 2}) × región de posición + valores límite en los bordes",PA-11,act(),"x=343 (BOARD_WIDTH-PLAYER_WIDTH), DERECHA pulsada",getX() ≤ 343 (no sale por la derecha)
+Player.act(),"Particiones del estado (dx ∈ {-2, 0, 2}) × región de posición + valores límite en los bordes",PA-12,act() ×200,"x=179, IZQUIERDA mantenida",En ningún ciclo getX() < 0
+Player.act(),"Particiones del estado (dx ∈ {-2, 0, 2}) × región de posición + valores límite en los bordes",PA-13,act() ×200,"x=179, DERECHA mantenida",En ningún ciclo getX() > 343
+Player.act(),"Particiones del estado (dx ∈ {-2, 0, 2}) × región de posición + valores límite en los bordes",PA-14,act(),"x=0, sin tecla pulsada",getX()=0 (posición límite válida se conserva)
+Player.keyPressed(KeyEvent e),Clases de equivalencia sobre la tecla + secuencias de eventos,KP-01,keyPressed(IZQUIERDA); luego act(),"Player en x=179, sin teclas previas",getX()=177
+Player.keyPressed(KeyEvent e),Clases de equivalencia sobre la tecla + secuencias de eventos,KP-02,keyPressed(DERECHA); luego act(),"Player en x=179, sin teclas previas",getX()=181
+Player.keyPressed(KeyEvent e),Clases de equivalencia sobre la tecla + secuencias de eventos,KP-03,keyPressed(ARRIBA); luego act(),"Player en x=179, sin teclas previas",getX()=179 (sin acción)
+Player.keyPressed(KeyEvent e),Clases de equivalencia sobre la tecla + secuencias de eventos,KP-04,keyPressed(ABAJO); luego act(),"Player en x=179, sin teclas previas",getX()=179
+Player.keyPressed(KeyEvent e),Clases de equivalencia sobre la tecla + secuencias de eventos,KP-05,keyPressed(ESPACIO); luego act(),"Player en x=179, sin teclas previas",getX()=179
+Player.keyPressed(KeyEvent e),Clases de equivalencia sobre la tecla + secuencias de eventos,KP-06,keyPressed(letra A); luego act(),"Player en x=179, sin teclas previas",getX()=179
+Player.keyPressed(KeyEvent e),Clases de equivalencia sobre la tecla + secuencias de eventos,KP-07,"keyPressed(IZQUIERDA), keyPressed(DERECHA); luego act()","Player en x=179, sin teclas previas","getX()=181 (prevalece la última, sin soltar)"
+Player.keyPressed(KeyEvent e),Clases de equivalencia sobre la tecla + secuencias de eventos,KP-08,"keyPressed(DERECHA), keyPressed(IZQUIERDA); luego act()","Player en x=179, sin teclas previas",getX()=177
+Player.keyPressed(KeyEvent e),Clases de equivalencia sobre la tecla + secuencias de eventos,KP-09,keyPressed(IZQUIERDA) dos veces; luego act(),"Player en x=179, sin teclas previas","getX()=177 (variación de 2 en 2, no acumulada)"
+Player.keyPressed(KeyEvent e),Clases de equivalencia sobre la tecla + secuencias de eventos,KP-10,"keyPressed(IZQUIERDA), keyPressed(ARRIBA); luego act()","Player en x=179, sin teclas previas",getX()=177 (otra tecla no cancela el movimiento)
+Player.keyReleased(KeyEvent e),Clases de equivalencia sobre la tecla + secuencias (transición de estado de dx),KR-01,"keyPressed(IZQ.), keyReleased(IZQ.); luego act()","Player en x=179, sin teclas previas",getX()=179 (desplazamiento reiniciado a 0)
+Player.keyReleased(KeyEvent e),Clases de equivalencia sobre la tecla + secuencias (transición de estado de dx),KR-02,"keyPressed(DER.), keyReleased(DER.); luego act()","Player en x=179, sin teclas previas",getX()=179
+Player.keyReleased(KeyEvent e),Clases de equivalencia sobre la tecla + secuencias (transición de estado de dx),KR-03,"keyPressed(IZQ.), keyReleased(ARRIBA); luego act()","Player en x=179, sin teclas previas",getX()=177 (otra tecla no produce acción)
+Player.keyReleased(KeyEvent e),Clases de equivalencia sobre la tecla + secuencias (transición de estado de dx),KR-04,"keyPressed(DER.), keyReleased(ESPACIO); luego act()","Player en x=179, sin teclas previas",getX()=181
+Player.keyReleased(KeyEvent e),Clases de equivalencia sobre la tecla + secuencias (transición de estado de dx),KR-05,keyReleased(IZQ.) sin pulsación previa; luego act(),"Player en x=179, sin teclas previas",getX()=179
+Player.keyReleased(KeyEvent e),Clases de equivalencia sobre la tecla + secuencias (transición de estado de dx),KR-06,"keyPressed(IZQ.), keyReleased(IZQ.), keyPressed(DER.); luego act()","Player en x=179, sin teclas previas",getX()=181
+Player.keyReleased(KeyEvent e),Clases de equivalencia sobre la tecla + secuencias (transición de estado de dx),KR-07,"keyPressed(DER.), keyReleased(DER.), keyPressed(IZQ.); luego act()","Player en x=179, sin teclas previas",getX()=177
+Shot(),Verificación mínima,SH-01,new Shot(),—,Se construye un objeto no nulo sin lanzar excepción (el estado inicial no está documentado)
+"Shot(int x, int y)",Clases de equivalencia + valores representativos (oráculo aritmético),SX-01,"x=100, y=100",Objeto recién construido,"getX()=106 (x+H_SPACE), getY()=99 (y-V_SPACE)"
+"Shot(int x, int y)",Clases de equivalencia + valores representativos (oráculo aritmético),SX-02,"x=0, y=50",Objeto recién construido,"getX()=6, getY()=49"
+"Shot(int x, int y)",Clases de equivalencia + valores representativos (oráculo aritmético),SX-03,"x=50, y=1",Objeto recién construido,"getX()=56, getY()=0"
+"Shot(int x, int y)",Clases de equivalencia + valores representativos (oráculo aritmético),SX-04,"x=1, y=1",Objeto recién construido,"getX()=7, getY()=0"
+"Shot(int x, int y)",Clases de equivalencia + valores representativos (oráculo aritmético),SX-05,"x=300, y=2",Objeto recién construido,"getX()=306, getY()=1"
+"Shot(int x, int y)",Clases de equivalencia + valores representativos (oráculo aritmético),SX-06,"x=179, y=280 (posición inicial del jugador)",Objeto recién construido,"getX()=185, getY()=279"
+Board(),Verificación del valor esperado (caso único),BC-01,new Board(),—,getAliens().size()=24
+Board(),Verificación del valor esperado (caso único),BC-02,new Board(),—,"getPlayer() no nulo, en (179, 280)"
+Board(),Verificación del valor esperado (caso único),BC-03,new Board(),—,getShot() no nulo
+Board(),Verificación del valor esperado (caso único),BC-04,new Board(),—,getDeaths()=0
+Board(),Verificación del valor esperado (caso único),BC-05,new Board(),—,isInGame()=true (la partida comienza)
+Board.gameInit(),Verificación de salida frente a la especificación + reinicialización,GI-01,gameInit(),Board recién construido,getAliens().size()=24 (ALIEN_ROWS×ALIEN_COLUMNS = 4×6)
+Board.gameInit(),Verificación de salida frente a la especificación + reinicialización,GI-02,gameInit(),Board recién construido,"Conjunto de posiciones de aliens = {(150+18·c, 5+18·f) | f∈0..3, c∈0..5}; 24 posiciones distintas"
+Board.gameInit(),Verificación de salida frente a la especificación + reinicialización,GI-03,gameInit(),Board recién construido,Todos los aliens son visibles (isVisible()=true)
+Board.gameInit(),Verificación de salida frente a la especificación + reinicialización,GI-04,gameInit(),Board recién construido,"getPlayer() no nulo, en (179, 280)"
+Board.gameInit(),Verificación de salida frente a la especificación + reinicialización,GI-05,gameInit(),Board recién construido,getShot() no nulo
+Board.gameInit(),Verificación de salida frente a la especificación + reinicialización,GI-06,gameInit() por segunda vez,Board con 10 aliens eliminados de la lista y deaths=10,getAliens().size()=24 y mismas posiciones que GI-02 (nueva partida)
+Board.update(),Análisis de valores límite sobre deaths + caso de integración de la secuencia,UP-01,update(),deaths=0,isInGame()=true
+Board.update(),Análisis de valores límite sobre deaths + caso de integración de la secuencia,UP-02,update(),deaths=1,isInGame()=true
+Board.update(),Análisis de valores límite sobre deaths + caso de integración de la secuencia,UP-03,update(),deaths=12,isInGame()=true
+Board.update(),Análisis de valores límite sobre deaths + caso de integración de la secuencia,UP-04,update(),deaths=23 (NUMBER_OF_ALIENS_TO_DESTROY-1),"isInGame()=true; getMessage() ≠ ""Game won!"""
+Board.update(),Análisis de valores límite sobre deaths + caso de integración de la secuencia,UP-05,update(),deaths=24 (NUMBER_OF_ALIENS_TO_DESTROY),"isInGame()=false; getMessage()=""Game won!"""
+Board.update(),Análisis de valores límite sobre deaths + caso de integración de la secuencia,UP-06,update(),"Board nuevo, direction=1, DERECHA pulsada, shot visible en (100,200)","Player x=181; shot y=196; cada alien x+1 con la misma y (se ejecutan Player.act, update_shots y update_aliens)"
+Board.update_shots(),"Clases de equivalencia (estado del disparo, colisión) + valores límite",US-01,update_shots(),"Lista con un alien visible en (100,100); disparo visible en (200,200)","Disparo en (200,196); deaths=0"
+Board.update_shots(),"Clases de equivalencia (estado del disparo, colisión) + valores límite",US-02,update_shots(),"Lista con un alien visible en (100,100); disparo invisible (die()) en (200,200)",Disparo sin moverse: getY()=200; deaths=0
+Board.update_shots(),"Clases de equivalencia (estado del disparo, colisión) + valores límite",US-03,update_shots(),"Lista con un alien visible en (100,100); disparo visible en (200,5)",getY()=1 y disparo visible
+Board.update_shots(),"Clases de equivalencia (estado del disparo, colisión) + valores límite",US-04,update_shots(),"Lista con un alien visible en (100,100); disparo visible en (200,3)",Disparo eliminado (isVisible()=false); deaths=0
+Board.update_shots(),"Clases de equivalencia (estado del disparo, colisión) + valores límite",US-05,update_shots(),"Lista con un alien visible en (100,100); disparo visible en (106,106)",Alien marcado como destruido (isDying()=true); deaths=1
+Board.update_shots(),"Clases de equivalencia (estado del disparo, colisión) + valores límite",US-06,update_shots(),"Lista con un alien visible en (100,100); disparo visible en (101,106)",Colisión: alien destruido; deaths=1
+Board.update_shots(),"Clases de equivalencia (estado del disparo, colisión) + valores límite",US-07,update_shots(),"Lista con un alien visible en (100,100); disparo visible en (111,106)",Colisión: alien destruido; deaths=1
+Board.update_shots(),"Clases de equivalencia (estado del disparo, colisión) + valores límite",US-08,update_shots(),"Lista con un alien visible en (100,100); disparo visible en (99,106)",Sin colisión: alien no destruido; deaths=0
+Board.update_shots(),"Clases de equivalencia (estado del disparo, colisión) + valores límite",US-09,update_shots(),"Lista con un alien visible en (100,100); disparo visible en (113,106)",Sin colisión; deaths=0
+Board.update_shots(),"Clases de equivalencia (estado del disparo, colisión) + valores límite",US-10,update_shots(),"Lista con un alien visible en (100,100); disparo visible en (106,60)",Sin colisión (disparo por encima); deaths=0
+Board.update_shots(),"Clases de equivalencia (estado del disparo, colisión) + valores límite",US-11,update_shots(),"Lista con un alien visible en (100,100); disparo visible en (106,160)",Sin colisión (disparo por debajo); deaths=0
+Board.update_shots(),"Clases de equivalencia (estado del disparo, colisión) + valores límite",US-12,update_shots(),"Alien invisible (die()) en (100,100); disparo visible en (106,106)",deaths=0; alien no marcado como destruido
+Board.update_shots(),"Clases de equivalencia (estado del disparo, colisión) + valores límite",US-13,update_shots(),"Lista con un alien visible en (100,100); disparo invisible en (106,106)",deaths=0; alien no marcado como destruido
+Board.update_shots(),"Clases de equivalencia (estado del disparo, colisión) + valores límite",US-14,update_shots(),"Aliens en (100,100) y (118,100); disparo visible en (106,106)",Solo el primero destruido; el segundo no; deaths=1
+Board.update_shots(),"Clases de equivalencia (estado del disparo, colisión) + valores límite",US-15,update_shots(),"Lista con un alien visible en (100,100); deaths=5; disparo visible en (106,106)",deaths=6 (contador incrementado en 1)
+Board.update_shots(),"Clases de equivalencia (estado del disparo, colisión) + valores límite",US-16,update_shots() dos veces seguidas,"Lista con un alien visible en (100,100); disparo visible en (200,200)",getY()=192 (SHOT_SPEED=4 por ciclo)
+Board.update_aliens(),Clases de equivalencia + valores límite sobre bordes y límite inferior,UA-01,update_aliens(),"direction=1; alien visible en (100,50)","Alien en (101,50); direction=1; isInGame()=true"
+Board.update_aliens(),Clases de equivalencia + valores límite sobre bordes y límite inferior,UA-02,update_aliens(),"direction=-1; alien visible en (100,50)","Alien en (99,50); direction=-1"
+Board.update_aliens(),Clases de equivalencia + valores límite sobre bordes y límite inferior,UA-03,update_aliens(),"direction=1; aliens visibles en (100,50), (118,50), (136,50)",Cada alien avanza 1 en x; y sin cambios (50)
+Board.update_aliens(),Clases de equivalencia + valores límite sobre bordes y límite inferior,UA-04,update_aliens(),"direction=1; alien invisible (die()) en (100,50) y visible en (118,50)",El invisible no se mueve (x=100); el visible pasa a x=119
+Board.update_aliens(),Clases de equivalencia + valores límite sobre bordes y límite inferior,UA-05,update_aliens(),"direction=1; alien en (328,50) (BOARD_WIDTH-BORDER_RIGHT)",direction=-1; getY()=65 (GO_DOWN=15) (ver S6)
+Board.update_aliens(),Clases de equivalencia + valores límite sobre bordes y límite inferior,UA-06,update_aliens(),"direction=1; alien en (326,50)",direction=1; getY()=50 (aún sin llegar al borde)
+Board.update_aliens(),Clases de equivalencia + valores límite sobre bordes y límite inferior,UA-07,update_aliens(),"direction=1; alien en (340,50)",direction=-1; getY()=65
+Board.update_aliens(),Clases de equivalencia + valores límite sobre bordes y límite inferior,UA-08,update_aliens(),"direction=-1; alien en (5,50) (BORDER_LEFT)",direction=1; getY()=65
+Board.update_aliens(),Clases de equivalencia + valores límite sobre bordes y límite inferior,UA-09,update_aliens(),"direction=-1; alien en (7,50)",direction=-1; getY()=50
+Board.update_aliens(),Clases de equivalencia + valores límite sobre bordes y límite inferior,UA-10,update_aliens(),"direction=-1; alien en (2,50)",direction=1; getY()=65
+Board.update_aliens(),Clases de equivalencia + valores límite sobre bordes y límite inferior,UA-11,update_aliens(),"direction=1; aliens en (328,50), (200,50), (100,80)","direction=-1; todos descienden 15: y=65, 65, 95"
+Board.update_aliens(),Clases de equivalencia + valores límite sobre bordes y límite inferior,UA-12,update_aliens(),"direction=1; alien visible en (100,303)","isInGame()=false; getMessage()=""Invasion!"""
+Board.update_aliens(),Clases de equivalencia + valores límite sobre bordes y límite inferior,UA-13,update_aliens(),"direction=1; alien visible en (100,302) (GROUND+ALIEN_HEIGHT)",isInGame()=true (el límite no se supera estrictamente) (*)
+Board.update_aliens(),Clases de equivalencia + valores límite sobre bordes y límite inferior,UA-14,update_aliens(),"direction=1; alien visible en (100,301)",isInGame()=true
+Board.update_bomb(),Clases de equivalencia + valores límite + prueba estadística (aleatoriedad),UB-01,update_bomb(),"Alien en (100,50) con su bomba activa (setDestroyed(false)) en (100,100)","Bomba en (100,101) (BOMB_SPEED=1); no destruida; no se crea otra bomba"
+Board.update_bomb(),Clases de equivalencia + valores límite + prueba estadística (aleatoriedad),UB-02,update_bomb() ×5,"Alien en (100,50) con su bomba activa (setDestroyed(false)) en (100,100)","Bomba en (100,105); no destruida"
+Board.update_bomb(),Clases de equivalencia + valores límite + prueba estadística (aleatoriedad),UB-03,update_bomb(),"Alien en (100,50) con su bomba activa (setDestroyed(false)) en (100,283)",Bomba no destruida
+Board.update_bomb(),Clases de equivalencia + valores límite + prueba estadística (aleatoriedad),UB-04,update_bomb(),"Alien en (100,50) con su bomba activa (setDestroyed(false)) en (100,285) (GROUND-BOMB_HEIGHT)",Bomba destruida (isDestroyed()=true)
+Board.update_bomb(),Clases de equivalencia + valores límite + prueba estadística (aleatoriedad),UB-05,update_bomb(),"Alien en (100,50) con su bomba activa (setDestroyed(false)) en (100,290)",Bomba destruida
+Board.update_bomb(),Clases de equivalencia + valores límite + prueba estadística (aleatoriedad),UB-06,update_bomb(),"Alien invisible (die()) con bomba destruida en (100,100)","La bomba permanece destruida y en (100,100) (sin creación de bombas)"
+Board.update_bomb(),Clases de equivalencia + valores límite + prueba estadística (aleatoriedad),UB-07,update_bomb(),"Player en (179,280), visible; Alien en (100,50) con su bomba activa (setDestroyed(false)) en (185,282)",Jugador marcado como destruido (isDying()=true)
+Board.update_bomb(),Clases de equivalencia + valores límite + prueba estadística (aleatoriedad),UB-08,update_bomb(),"Player en (179,280); Alien en (100,50) con su bomba activa (setDestroyed(false)) en (160,282)",Jugador no destruido (bomba a la izquierda)
+Board.update_bomb(),Clases de equivalencia + valores límite + prueba estadística (aleatoriedad),UB-09,update_bomb(),"Player en (179,280); Alien en (100,50) con su bomba activa (setDestroyed(false)) en (200,282)",Jugador no destruido (bomba a la derecha)
+Board.update_bomb(),Clases de equivalencia + valores límite + prueba estadística (aleatoriedad),UB-10,update_bomb(),"Player en (179,280); Alien en (100,50) con su bomba activa (setDestroyed(false)) en (185,200)",Jugador no destruido (bomba por encima)
+Board.update_bomb(),Clases de equivalencia + valores límite + prueba estadística (aleatoriedad),UB-11,update_bomb(),"Player en (179,280); Alien en (100,50) con su bomba activa (setDestroyed(false)) en (178,282)",Jugador no destruido (1 px fuera por la izquierda)
+Board.update_bomb(),Clases de equivalencia + valores límite + prueba estadística (aleatoriedad),UB-12,update_bomb(),"Player en (179,280); Alien en (100,50) con su bomba activa (setDestroyed(false)) en (180,282)",Jugador destruido (1 px dentro por la izquierda)
+Board.update_bomb(),Clases de equivalencia + valores límite + prueba estadística (aleatoriedad),UB-13,update_bomb(),"Player en (179,280); Alien en (100,50) con su bomba activa (setDestroyed(false)) en (193,282)",Jugador destruido (1 px dentro por la derecha: 179+PLAYER_WIDTH-1)
+Board.update_bomb(),Clases de equivalencia + valores límite + prueba estadística (aleatoriedad),UB-14,update_bomb(),"Player en (179,280); Alien en (100,50) con su bomba activa (setDestroyed(false)) en (195,282)",Jugador no destruido (1 px fuera por la derecha)
+Board.update_bomb(),Clases de equivalencia + valores límite + prueba estadística (aleatoriedad),UB-15,update_bomb() repetido hasta 1000 veces,"Alien visible en (100,50) con bomba destruida","En algún ciclo se crea bomba (isDestroyed()=false) con getX()=100 y 50 ≤ getY() ≤ 51 (prueba estadística, ver 9.15)"
